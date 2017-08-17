@@ -40,7 +40,7 @@ lazybones {
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.4.5'
+    compile 'org.codehaus.groovy:groovy-all:2.4.9'
 }
 
 task wrapper(type: Wrapper) {

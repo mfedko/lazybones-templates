@@ -13,7 +13,8 @@ props.version = ask("Define value for 'version' [0.0.1]: ", "0.0.1", "version")
 props.dockerHost = "192.168.99.100"
 props.projectName = projectDir.name
 
-String mainApplicationFileName = 'Application.groovy'
+// TODO: move Application to proper package
+String mainApplicationFileName = "src/main/groovy/ru/jeeconf/Application.groovy"
 String rebuildScriptFileName = 'rebuild.sh'
 String rebuildScriptFileNamePrefix = 'rebuild'
 
@@ -21,6 +22,7 @@ String rebuildScriptFileNamePrefix = 'rebuild'
 //processTemplates "src/main/resources/bootstrap.yml", props
 processTemplates 'Dockerfile', props
 processTemplates 'README.md', props
+processTemplates 'build.gradle', props
 processTemplates mainApplicationFileName, props
 processTemplates rebuildScriptFileName, props
 

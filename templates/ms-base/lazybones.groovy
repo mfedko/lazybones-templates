@@ -6,6 +6,6 @@ props.dockerHost = "192.168.99.100"
 props.projectName = props.group.split('\\.').last()
 props.dns = "172.17.42.1"
 
-//processTemplates "build.gradle", props
+processTemplates "build.gradle", props
 processTemplates "docker-compose.yml", props
 processTemplates "settings.gradle", props
