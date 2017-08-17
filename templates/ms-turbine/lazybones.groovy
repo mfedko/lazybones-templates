@@ -13,7 +13,7 @@ props.version = ask("Define value for 'version' [0.0.1]: ", "0.0.1", "version")
 props.dockerHost = "192.168.99.100"
 props.projectName = projectDir.name
 
-String mainApplicationFileName = 'Application.groovy'
+String mainApplicationFileName = 'src/main/groovy/ru/jeeconf/TurbineApplication.groovy'
 String rebuildScriptFileName = 'rebuild.sh'
 String rebuildScriptFileNamePrefix = 'rebuild'
 

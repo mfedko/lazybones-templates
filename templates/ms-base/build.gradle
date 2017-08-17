@@ -32,6 +32,9 @@ subprojects {
     apply plugin: 'groovy'
     apply plugin: 'idea'
     apply plugin: 'org.springframework.boot'
+    // TODO: Execution failed for task ':XXX-service:findMainClass'.
+    // > Could not set unknown property 'mainClassName' for project ':f1-service'
+    apply plugin: 'application'
 
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
